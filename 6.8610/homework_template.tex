@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=2cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{bm}
+\usepackage{pdfpages} % To include code PDFs if needed
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+% ============================================
+% CUSTOMIZE THESE FOR EACH HOMEWORK
+% ============================================
+\newcommand{\course}{6.8610 Grad NLP}       % If needed: Change to your subject name
+\newcommand{\term}{Spring 2026}             % If needed: Change to the current term
+\newcommand{\studentname}{Student Name}     % TODO: Change to your name
+\newcommand{\studentemail}{student@mit.edu} % TODO: Change to your email
+\newcommand{\hwnumber}{X}                   % TODO: Change to homework number
+% ============================================
+
+% Math notation (inspired by 6.7960 and https://visionbook.mit.edu/notations.html)
+\newcommand{\E}{\mathbb{E}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\softmax}{\mathrm{softmax}}
+\newcommand{\sigmoid}{\sigma}
+\newcommand{\relu}{\mathrm{ReLU}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\vw}{\mathbf{w}}
+\newcommand{\vc}{\mathbf{c}}
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\vz}{\mathbf{z}}
+\DeclareMathOperator{\PMI}{PMI}
+
+% Solution environment with shaded background
+\definecolor{shadecolor}{gray}{0.9}
+\newenvironment{mysolution}
+  {\begin{shaded}\noindent\textbf{My Solution:}\ }
+  {\end{shaded}}
+
+% Page formatting
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+\setlist[enumerate]{parsep=5pt}
+
+% Header and footer
+\pagestyle{fancy}
+\headheight 40pt
+\lhead{\textbf{\studentname} \\ \texttt{\studentemail}}
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ \term}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+
+\section{Problem 1: [Problem Title]}
+
+[Problem statement or brief description]
+
+\begin{mysolution}
+TODO: Write your solution here.
+\end{mysolution}
+
+\section{Problem 2: [Problem Title]}
+
+[Problem statement or brief description]
+
+\begin{mysolution}
+TODO: Write your solution here.
+\end{mysolution}
+
+\section{Problem 3: [Problem Title]}
+
+[Problem statement or brief description]
+
+\subsection{Part (a)}
+
+\begin{mysolution}
+TODO: Write your solution here.
+\end{mysolution}
+
+\subsection{Part (b)}
+
+\begin{mysolution}
+TODO: Write your solution here.
+\end{mysolution}
+
+% Add more sections as needed
+% \section{Problem 4: [Problem Title]}
+% 
+% \begin{mysolution}
+% TODO: Write your solution here.
+% \end{mysolution}
+
+% Optional: Appendix for code, plots, etc.
+\newpage
+\appendix
+\section{Code Listings}
+% Ususally, you can just include the PDF exported from your Jupyter notebook or code files here.
+% \includepdf[pages=-]{code.pdf}
+
+\end{document}
